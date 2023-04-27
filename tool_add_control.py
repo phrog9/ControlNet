@@ -23,6 +23,7 @@ def get_node_name(name, parent_name):
         return False, ''
     return True, name[len(parent_name):]
 
+print("alex2")
 
 model = create_model(config_path='./models/cldm_v15.yaml')
 
