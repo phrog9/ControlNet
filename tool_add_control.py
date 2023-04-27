@@ -26,9 +26,13 @@ def get_node_name(name, parent_name):
 
 model = create_model(config_path='./models/cldm_v15.yaml')
 
+print("alex")
+
 pretrained_weights = torch.load(input_path)
 if 'state_dict' in pretrained_weights:
     pretrained_weights = pretrained_weights['state_dict']
+
+print("dyer")
 
 scratch_dict = model.state_dict()
 
